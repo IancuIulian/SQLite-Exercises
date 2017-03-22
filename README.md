@@ -1,3 +1,3 @@
 # SQLite-Exercises
 
-music.db is the database provided for these exercises.
+music.db is a database file provided for these exercises.

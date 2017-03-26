@@ -36,11 +36,6 @@ SET name = "Mehitabel_MODIFIED"
 WHERE artists.name = "Mehitabel";
 
 
-
-
-
-
-
 5. Check that the record was correctly renamed.
 
 SELECT artists.name FROM artists
@@ -82,3 +77,7 @@ WHERE artists.name = "Aerosmith";
 SELECT COUNT(DISTINCT albums.name) FROM albums
 INNER JOIN artists ON albums.artist = artists._id
 WHERE artists.name = "Aerosmith";
+
+
+
+.

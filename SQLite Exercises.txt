@@ -36,6 +36,11 @@ SET name = "Mehitabel_MODIFIED"
 WHERE artists.name = "Mehitabel";
 
 
+
+
+
+
+
 5. Check that the record was correctly renamed.
 
 SELECT artists.name FROM artists

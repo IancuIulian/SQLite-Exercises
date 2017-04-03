@@ -13,7 +13,8 @@ INNER JOIN albums ON songs.album = albums._id
 WHERE albums.name = "Forbidden";
 
 
-2. Repeat the previous query but this time display the songs in track order. You may want to include the track number in the output to verify that it worked ok.
+2. Repeat the previous query but this time display the songs in track order. You may want to include the track number in the output to
+verify that it worked ok.
 
 SELECT songs.track, songs.title FROM songs
 INNER JOIN albums ON songs.album = albums._id

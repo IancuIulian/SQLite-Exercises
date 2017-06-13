@@ -1,0 +1,76 @@
+1.
+    SQL is a programming language designed to manipulate and manage data stored in relational databases.
+        A relational database is a database that organizes information into one or more tables.
+        A table is a collection of data organized into rows and columns.
+
+    A statement is a string of characters that the database recognizes as a valid command.
+        CREATE TABLE creates a new table.
+        INSERT INTO adds a new row to a table.
+        SELECT queries data from a table.
+        UPDATE edits a row in a table.
+        ALTER TABLE changes an existing table.
+        DELETE FROM deletes rows from a table.
+
+2.
+    SELECT is the clause you use every time you want to query information from a database.
+
+    WHERE is a popular command that lets you filter the results of the query based on conditions that you specify.
+
+    LIKE and BETWEEN are special operators that can be used in a WHERE clause
+
+    AND and OR are special operators that you can use with WHERE to filter the query on two or more conditions.
+
+    ORDER BY lets you sort the results of the query in either ascending or descending order.
+
+    LIMIT lets you specify the maximum number of rows that the query will return. This is especially important in large tables that have thousands or even millions of rows.
+
+3.
+    Aggregate functions combine multiple rows together to form a single value of more meaningful information.
+    COUNT takes the name of a column(s) as an argument and counts the number of rows where the value(s) is not NULL.
+    GROUP BY is a clause used with aggregate functions to combine data from one or more columns.
+    SUM() takes the column name as an argument and returns the sum of all the values in that column.
+    MAX() takes the column name as an argument and returns the largest value in that column.
+    MIN() takes the column name as an argument and returns the smallest value in that column.
+    AVG() takes a column name as an argument and returns the average value for that column.
+    ROUND() takes two arguments, a column name and the number of decimal places to round the values in that column.
+
+4.
+    Primary Key is a column that serves a unique identifier for row in the table. Values in this column must be unique and cannot be NULL.
+    Foreign Key is a column that contains the primary key to another table in the database. It is used to identify a particular row in the referenced table.
+    Joins are used in SQL to combine data from multiple tables.
+    INNER JOIN will combine rows from different tables if the join condition is true.
+    LEFT OUTER JOIN will return every row in the left table, and if the join condition is not met, NULL values are used to fill in the columns from the right table.
+    AS is a keyword in SQL that allows you to rename a column or table in the result set using an alias.
+
+5.
+    - Subqueries are used to complete an SQL transformation by nesting one query within another query.
+
+    - A non-correlated subquery is a subquery that can be run independently of the outer query and can be used to complete a multi-step transformation.
+
+    - A correlated subquery is a subquery that cannot be run independently of the outer query. The order of operations in a correlated subquery is as follows:
+            1. A row is processed in the outer query.
+            2. Then, for that particular row in the outer query, the subquery is executed.
+
+6.
+    The UNION clause allows us to utilize information from multiple tables in our queries.
+    The UNION ALL clause allows us to utilize information from multiple tables in our queries, including duplicate values.
+    INTERSECT is used to combine two SELECT statements, but returns rows only from the first SELECT statement that are identical to a row in the second SELECT statement.
+    EXCEPT returns distinct rows from the first SELECT statement that aren’t output by the second SELECT statement
+
+7.
+    NULL can be used to denote an empty field value
+    CASE statements allow for custom classification of data
+    CASE statements can be used inside aggregates (like SUM() and COUNT()) to provide filtered measures
+
+8.
+    DATETIME; Returns the date and time of the column specified. This can be modified to return only the date or only the time.
+    DATETIME(time1, +X hours, Y minutes, Z days): Increments the specificed column by a given number of hours, minutes, or days.
+
+    Numeric Functions:
+    (number1 + number2);: Returns the sum of two numbers, or other mathematical operations, accordingly.
+    CAST(number1 AS REAL) / number2; : Returns the result as a real number by casting one of numeric inputs as a real number
+    ROUND(number, precision);: Returns the numeric value rounded off to the next value specified.
+
+    String Functions:
+    'string1' || ' ' || 'string2'; : Concatenates string1 and string 2, with a space between.
+    REPLACE(string,from_string,to_string): Returns the string with all occurrences of the string from_string replaced by the string to_string.
